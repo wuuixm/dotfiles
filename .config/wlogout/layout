@@ -1,0 +1,27 @@
+{
+    "label": "lock",
+    "action": "hyprlock",
+    "text": "Locking",
+    "keybind": "l"
+}
+
+{
+    "label": "logout",
+    "action": "loginctl terminate-user $USER",
+    "text": "Signout",
+    "keybind": "e"
+}
+
+{
+    "label": "shutdown",
+    "action": "systemctl poweroff",
+    "text": "Poweroff",
+    "keybind": "s"
+}
+
+{
+    "label": "reboot",
+    "action": "systemctl reboot",
+    "text": "Reboot",
+    "keybind": "r"
+}

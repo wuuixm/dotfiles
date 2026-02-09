@@ -1,0 +1,26 @@
+# Material You colors
+
+background-color=#003642
+text-color=#c1c4eb
+border-color=#404565
+
+# --- 新增设置 ---
+# 设置圆角半径（可以根据喜好调整数值）
+border-radius=12
+# 设置默认消失时间为 8 秒
+default-timeout=8000
+# ----------------
+
+# Per-mode settings
+
+[mode=do-not-disturb]
+invisible=1
+on-notify=none
+
+[mode=silent]
+on-notify=none
+
+[urgency=high]
+border-color=#93000a
+# 高优先级通知通常建议设为 0 (永不消失) 或者更长的时间
+default-timeout=0

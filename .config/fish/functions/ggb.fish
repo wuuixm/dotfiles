@@ -1,0 +1,3 @@
+function ggb
+     google-chrome-stable --new-window "https://www.bing.com/search?q=$argv&setlang=zh" >/dev/null 2>&1 & disown; 
+end

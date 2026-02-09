@@ -1,0 +1,186 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+
+  "display": {
+    "separator": "  ",
+    "key": {
+      "width": 13
+    }
+  },
+
+  "logo": {
+    "type": "builtin",
+    "source": "Arch"
+  },
+
+  "modules": [
+    /* ================= Title ================= */
+    {
+      "type": "title",
+      "color": {
+        "user": "bright_cyan",
+        "at": "white",
+        "host": "bright_cyan"
+      }
+    },
+
+    "break",
+
+    /* ================= System ================= */
+    {
+      "type": "os",
+      "key": "● OS",
+      "keyColor": "bright_blue"
+    },
+    {
+      "type": "host",
+      "key": "● Host",
+      "keyColor": "bright_blue"
+    },
+    {
+      "type": "kernel",
+      "key": "● Kernel",
+      "keyColor": "bright_blue"
+    },
+    {
+      "type": "uptime",
+      "key": "● Uptime",
+      "keyColor": "bright_blue"
+    },
+    {
+      "type": "packages",
+      "key": "● Packages",
+      "keyColor": "bright_blue"
+    },
+
+    "break",
+
+    /* ================= Session / Desktop ================= */
+    {
+      "type": "de",
+      "key": "● DE",
+      "keyColor": "bright_magenta"
+    },
+    {
+      "type": "wm",
+      "key": "● WM",
+      "keyColor": "bright_magenta"
+    },
+    {
+      "type": "wmtheme",
+      "key": "● WM Theme",
+      "keyColor": "bright_magenta"
+    },
+    {
+      "type": "display",
+      "key": "● Display",
+      "keyColor": "bright_magenta"
+    },
+
+    "break",
+
+    /* ================= Terminal ================= */
+    {
+      "type": "shell",
+      "key": "● Shell",
+      "keyColor": "bright_magenta"
+    },
+    {
+      "type": "terminal",
+      "key": "● Terminal",
+      "keyColor": "bright_magenta"
+    },
+    {
+      "type": "terminalfont",
+      "key": "● Font",
+      "keyColor": "bright_magenta"
+    },
+
+    "break",
+
+    /* ================= Hardware ================= */
+    {
+      "type": "cpu",
+      "key": "● CPU",
+      "keyColor": "bright_yellow"
+    },
+    {
+      "type": "cpuusage",
+      "key": "● CPU Load",
+      "keyColor": "bright_yellow"
+    },
+    {
+      "type": "gpu",
+      "key": "● GPU",
+      "keyColor": "bright_yellow"
+    },
+    {
+      "type": "memory",
+      "key": "● Memory",
+      "keyColor": "bright_yellow"
+    },
+    {
+      "type": "swap",
+      "key": "● Swap",
+      "keyColor": "bright_yellow"
+    },
+    {
+      "type": "disk",
+      "key": "● Disk",
+      "keyColor": "bright_yellow"
+    },
+
+    "break",
+
+    /* ================= Network / Power ================= */
+    {
+      "type": "localip",
+      "key": "● IP",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "wifi",
+      "key": "● WiFi",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "sound",
+      "key": "● Sound",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "brightness",
+      "key": "● Brightness",
+      "keyColor": "bright_green"
+    },
+    {
+      "type": "battery",
+      "key": "● Battery",
+      "keyColor": "bright_green"
+    },
+
+    "break",
+
+    /* ================= Locale / Time ================= */
+    {
+      "type": "localtime",
+      "key": "● Time",
+      "keyColor": "bright_cyan"
+    },
+    {
+      "type": "locale",
+      "key": "● Locale",
+      "keyColor": "bright_cyan"
+    },
+
+    "break",
+
+    /* ================= Colors ================= */
+    {
+      "type": "colors",
+      "paddingLeft": 2,
+      "symbol": "circle"
+    }
+  ]
+}
+
