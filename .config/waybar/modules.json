@@ -192,9 +192,10 @@
   "custom/pacman": {
     "format": " {}",
     "interval": 7200, // every two hours
-    "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'", // # of updates and tooltip details
+    //"exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'", // # of updates and tooltip details
+    "exec": "updates=$(checkupdates 2>/dev/null); if [ -n \"$updates\" ]; then count=$(echo \"$updates\" | wc -l); echo \"$count\"; echo \"$updates\" | column -t | tr '\n' '\r'; else echo \"0\"; echo \"No updates available\"; fi",
     "exec-if": "exit 0", // always run; consider advanced run conditions
-    "on-click": "wezterm -e sudo pacman -Syu", // update system
+    "on-click": "ghostty -e sudo pacman -Syu", // update system
     "signal": 8
   },
   "custom/power": {

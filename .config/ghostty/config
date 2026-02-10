@@ -1,0 +1,48 @@
+theme = "Matugen"
+# === 基本设置
+
+# 背景透明度
+background-opacity = 0.7
+
+# 字体
+font-family = "JetBrainsMono Nerd Font"
+
+# 字体大小
+font-size = 12
+
+# 自动复制选中文本到系统剪切板
+# copy-on-select = clipboard
+
+# 确认关闭窗口时不显示确认提示
+confirm-close-surface = false
+
+# 光标轨迹特效相关文件
+custom-shader = "~/.config/ghostty/shaders/cursor_smear.glsl"
+
+# 行数限制 
+#scrollback-limit = 5000
+
+# 设置隐藏顶栏 title bar
+window-decoration = none
+
+# 设置左右边距
+window-padding-x=10
+
+# 设置上下边距
+window-padding-y=10
+
+# === 按键绑定
+# 上/下行滚动
+keybind = ctrl+j=scroll_page_lines:1
+keybind = ctrl+k=scroll_page_lines:-1
+
+# 上/下页滚动
+keybind = ctrl+shift+j=scroll_page_down
+keybind = ctrl+shift+k=scroll_page_up
+
+# 上/下prompt跳转
+keybind = ctrl+shift+h=jump_to_prompt:-1
+keybind = ctrl+shift+l=jump_to_prompt:1
+
+# 全选
+keybind = ctrl+shift+a=select_all

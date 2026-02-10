@@ -7,15 +7,15 @@ input_path = '~/.config/matugen/templates/colors.css'
 output_path = '~/.config/waybar/colors.css'
 post_hook = 'pkill -SIGUSR2 waybar'
 
-[templates.wezterm]
-input_path = '~/.config/matugen/templates/wezterm_theme.toml'
-output_path = '~/.config/wezterm/colors/matugen_theme.toml'
-post_hook = 'touch ~/.config/wezterm/wezterm.lua'
+#[templates.wezterm]
+#input_path = '~/.config/matugen/templates/wezterm_theme.toml'
+#output_path = '~/.config/wezterm/colors/matugen_theme.toml'
+#post_hook = 'touch ~/.config/wezterm/wezterm.lua'
 
-#[templates.ghostty]
-#input_path = '~/.config/matugen/templates/ghostty'
-#output_path = '~/.config/ghostty/themes/Matugen'
-#post_hook = 'pkill -SIGUSR2 ghostty'
+[templates.ghostty]
+input_path = '~/.config/matugen/templates/ghostty'
+output_path = '~/.config/ghostty/themes/Matugen'
+post_hook = 'pkill -SIGUSR2 ghostty'
 
 [templates.starship]
 input_path = '~/.config/matugen/templates/starship.toml'
