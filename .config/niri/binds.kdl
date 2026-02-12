@@ -17,28 +17,57 @@ binds {
 
     // 打开文件管理器
     Mod+E {spawn "nautilus";}
+
     // 打开壁纸选择
     Mod+Shift+W {spawn "waypaper";}
+
     // 关闭输入法
     Mod+F3 {spawn-sh "pkill fcitx5 || fcitx5";}
+
     // 关闭waybar
     Mod+F4 {spawn-sh "killall -SIGUSR1 waybar";}
-    // 上下滑动工作区
-    Mod+J     { focus-window-or-workspace-down; }
-    Mod+K     { focus-window-or-workspace-up; }
+
     // mod+鼠标中键关闭窗口
     Mod+MouseMiddle { close-window;}
+
     // 切换悬浮窗口模式
     Mod+Shift+V       { toggle-window-floating; }
+
     // 打开剪贴板
-    //Mod+V { spawn "sh" "-c" "cliphist list | rofi -dmenu | cliphist decode | wl-copy"; }
      Mod+V { spawn "sh" "-c" "cliphist list | anyrun --plugins /usr/lib/anyrun/libstdin.so | cliphist decode | wl-copy"; }
+
     // 打开启动器
     Mod+D hotkey-overlay-title="Run an Application: anyrun" { spawn "anyrun"; }
+
     // 锁屏
     Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
+
     // 截屏
     Mod+Return { spawn-sh "grim -g \"$(slurp)\" - | satty --filename -"; }
+
+    // 焦点移动，左右正常移动，上下在无焦点时移动工作区
+    Mod+Left  { focus-column-left; }
+    Mod+Down  { focus-window-or-workspace-down; }
+    Mod+Up    { focus-window-or-workspace-up; }
+    Mod+Right { focus-column-right; }
+    Mod+H     { focus-column-left; }
+    Mod+J     { focus-window-or-workspace-down; }
+    Mod+K     { focus-window-or-workspace-up; }
+    Mod+L     { focus-column-right; }
+    
+    // 移动当前窗口
+    Mod+Ctrl+Left  { move-column-left; }
+    Mod+Ctrl+Down  { move-column-to-workspace-down; }
+    Mod+Ctrl+Up    { move-column-to-workspace-up; }
+    Mod+Ctrl+Right { move-column-right; }
+    Mod+Ctrl+H     { move-column-left; }
+    Mod+Ctrl+J     { move-column-to-workspace-down; }
+    Mod+Ctrl+K     { move-column-to-workspace-up; }
+    Mod+Ctrl+L     { move-column-right; }
+    
+    // 整体移动当前工作区
+    Mod+Ctrl+Page_Down { move-workspace-down; }
+    Mod+Ctrl+Page_Up   { move-workspace-up; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
@@ -79,24 +108,8 @@ binds {
 
     Mod+Q repeat=false { close-window; }
 
-    Mod+Left  { focus-column-left; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
-    Mod+Right { focus-column-right; }
-    Mod+H     { focus-column-left; }
-    //Mod+J     { focus-window-down; }
-    //Mod+K     { focus-window-up; }
-    Mod+L     { focus-column-right; }
-
-    Mod+Ctrl+Left  { move-column-left; }
-    Mod+Ctrl+Down  { move-window-down; }
-    Mod+Ctrl+Up    { move-window-up; }
-    Mod+Ctrl+Right { move-column-right; }
-    Mod+Ctrl+H     { move-column-left; }
-    Mod+Ctrl+J     { move-window-down; }
-    Mod+Ctrl+K     { move-window-up; }
-    Mod+Ctrl+L     { move-column-right; }
-
+    
+    
     // Alternative commands that move across workspaces when reaching
     // the first or last window in a column.
     // Mod+J     { focus-window-or-workspace-down; }
@@ -139,8 +152,6 @@ binds {
     Mod+Page_Up        { focus-workspace-up; }
     Mod+U              { focus-workspace-down; }
     Mod+I              { focus-workspace-up; }
-    Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
-    Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
     Mod+Ctrl+I         { move-column-to-workspace-up; }
 
@@ -148,8 +159,8 @@ binds {
     // Mod+Ctrl+Page_Down { move-window-to-workspace-down; }
     // ...
 
-    Mod+Shift+Page_Down { move-workspace-down; }
-    Mod+Shift+Page_Up   { move-workspace-up; }
+    // Mod+Shift+Page_Down { move-workspace-down; }
+    // Mod+Shift+Page_Up   { move-workspace-up; }
     Mod+Shift+U         { move-workspace-down; }
     Mod+Shift+I         { move-workspace-up; }
 
