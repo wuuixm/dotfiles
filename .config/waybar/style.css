@@ -3,7 +3,7 @@
 * {
     color: @secondary;
     border: 0;
-    font-family: "JetBrainsMono Nerd Font Propo";
+    font-family: "JetBrainsMono Nerd Font";
 }
 
 window#waybar {
@@ -11,19 +11,20 @@ window#waybar {
     background-color: rgba(0, 0, 0, 0);
 }
 
+.module {
+    background-color: @background;
+    border-radius: 12px;
+    padding: 5px 8px;
+    margin: 4px 2px;
+    opacity: 0.7;
+}
 #workspaces {
-    border-radius: 10px;
-    margin-top: 6px;
-    margin-bottom: 6px;
-    margin-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-right: 8px;
-    padding-left: 8px;
+    border-radius: 12px;
+    margin: 4px 8px;
+    padding: 6px 10px;
 }
 
 #workspaces {
-    /* border: rgba(255, 255, 255, 0.2) solid 2px; */
     background: @background;
 }
 
@@ -59,83 +60,47 @@ window#waybar {
     transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
 }
 
-/* If workspaces is the leftmost module, omit left margin */
 .modules-left > widget:first-child > * {
     margin-left: 6px;
 }
 
-/* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > * {
     margin-right: 6px;
 }
 
-#network#bandwidth,
-#clock,
-#custom-cava,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#network,
-#pulseaudio,
-#mode,
-#tray,
-#custom-power,
-#custom-pacman,
-#power-profiles-daemon,
-#custom-system,
-#backlight {
-    padding: 4px 8px;
-    border-style: solid;
-    background-color: rgba(30, 30, 30, 0.65);
-    opacity: 1;
-    margin: 6px 0;
-}
-
-/* -----------------------------------------------------------------------------
-  * Module styles
-  * -------------------------------------------------------------------------- */
 #custom-cava {
-    border-radius: 10px;
+    border-radius: 12px;
     color: @on_primary_container;
 }
 
 #clock {
-    /* background-color:#a3be8c; */
     color: @secondary;
-    border-radius: 10px;
-    margin: 6px 8px;
+    border-radius: 12px;
+    margin: 4px 8px;
 }
 
 #battery {
     color: #a6da95;
-    /* border-bottom: 2px solid @sky; */
-    /* border-bottom: 2px solid #d8dee9; */
-    border-radius: 0 10px 10px 0;
-    margin-right: 0px;
+    border-radius: 0 12px 12px 0;
+    margin: 4px 8px 4px 0;
 }
 
 #battery.charging {
     color: #81a1c1;
-    /* border-bottom: 2px solid #81a1c1; */
 }
 
 @keyframes blink {
     to {
         color: #ed8796;
-        /* border-bottom: 2px solid @red; */
     }
 }
 
 #battery.warning:not(.charging) {
     color: #eed49f;
-    /* border-bottom: 2px solid #81a1c1; */
 }
 
 #battery.critical:not(.charging) {
     color: #bf616a;
-    /* border-bottom: 2px solid #bf616a; */
     animation-name: blink;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -145,13 +110,15 @@ window#waybar {
 
 #custom-system {
     color: @secondary;
-    border-radius: 10px 0 0 10px; /* 左上、左下圆角 */
-    /* border-bottom: 2px solid @sky; */
+    border-radius: 12px 0 0 12px;
+    margin: 4px 0 4px 8px;
 }
+
 
 #cpu {
     color: @secondary;
-    /* border-bottom: 2px solid @sky; */
+    border-radius: 0;
+    margin: 4px 0;
 }
 
 #cpu #cpu-icon {
@@ -160,156 +127,84 @@ window#waybar {
 
 #memory {
     color: @secondary;
+    border-radius: 0;
+    margin: 4px 0;
 }
 
 #disk {
     color: @secondary;
+    border-radius: 0;
+    margin: 4px 0;
+}
+
+#backlight {
+    border-radius: 0px;
+    margin: 4px 0px 4px 0;
 }
 
 #power-profiles-daemon {
     color: @secondary;
+    border-radius: 0;
+    margin: 4px 0;
 }
 
 #network.disabled {
     color: #bf616a;
-    /* border-bottom: 2px solid #bf616a; */
+    border-radius: 12px;
+    margin: 4px 8px;
 }
 
 #network {
     color: #a6da95;
-    /* border-bottom: 2px solid @green; */
-    border-radius: 10px;
-    margin-right: 4px;
+    border-radius: 12px;
+    margin: 4px 8px;
 }
 
 #network.disconnected {
     color: #bf616a;
-    /* border-bottom: 2px solid #bf616a; */
+    border-radius: 12px;
+    margin: 4px 8px;
 }
 
 #pulseaudio {
     color: #f0c6c6;
-    border-radius: 10px 10px;
-    /* border-bottom: 2px solid @flamingo; */
+    border-radius: 12px;
+    margin: 4px 8px;
 }
 
 #pulseaudio.muted {
     color: #3b4252;
-    /* border-bottom: 2px solid #3b4252; */
+    border-radius: 12px;
+    margin: 4px 8px;
 }
 
 #temperature {
     color: #8bd5ca;
-    /* border-bottom: 2px solid @teal; */
-    border-radius: 10px 0 0 10px;
+    border-radius: 12px 0 0 12px;
+    margin: 4px 0 4px 8px;
 }
 
 #temperature.critical {
     color: #ed8796;
-    /* border-bottom: 2px solid @red; */
+    border-radius: 12px;
+    margin: 4px 8px;
 }
 
 #tray {
-    /* background-color: @base; */
-    margin: 6px 4px;
-    border-radius: 10px;
+    border-radius: 12px;
+    margin: 4px 8px;
 }
 
 #custom-power {
     color: @background;
     background-color: @on_primary_container;
-    border-radius: 10px;
-    margin-left: 4px;
-    margin-right: 12px;
-    padding: 4px 8px;
+    border-radius: 12px;
+    margin: 4px 8px;
+    padding: 5px 10px;
 }
 
 #custom-pacman {
-    border-radius: 10px;
-    margin-right: 4px;
+    border-radius: 0 12px 12px 0;
+    margin: 4px 5px 4px 0;
 }
 
-/* #window { */
-/*     border-radius: 10px; */
-/*     color: @base; */
-/*     margin-left: 15px; */
-/*     background-color: @mauve; */
-/* } */
-
-/* window#waybar {
-     background: #2d2a2e;
- }
-
- * {
-     color: #c8b9a9;
-     font-family: Ubuntu Mono, sans-serif;
-     font-size: 12px;
- }
-
- #workspaces button.focused {
-     color: #f2e5bc;
- }
-
- #workspaces button {
-     color: #c8b9a9;
- }
-
- .separator {
-     background-color: #c8b9a9;
- }
-
- #mode {
-     color: #ebcb8b;
- }
-
- #clock {
-     color: #a3be8c;
- }
-
- #battery {
-     color: #d8dee9;
- }
-
- #battery.charging {
-     color: #b48ead;
- }
-
- #battery.critical:not(.charging) {
-     color: #bf616a;
- }
-
- #cpu {
-     color: #a3be8c;
- }
-
- #memory {
-     color: #d3869b;
- }
-
- #network {
-     color: #8fbcbb;
- }
-
- #network.disabled {
-     color: #bf616a;
- }
-
- #network.disconnected {
-     color: #bf616a;
- }
-
- #pulseaudio {
-     color: #b48ead;
- }
-
- #pulseaudio.muted {
-     color: #bf616a;
- }
-
- #temperature {
-     color: #8fbcbb;
- }
-
- #temperature.critical {
-     color: #bf616a;
- } */

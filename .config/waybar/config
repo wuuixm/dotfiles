@@ -1,35 +1,25 @@
 {
-  "layer": "top", // Waybar at top layer
-  "position": "top", // Waybar position (top|bottom|left|right)
-  "height": 10,
-  "margin": "-2 0 -12 0",
-  //"width": 1350, // Waybar width
-  // Choose the order of the modules idle_inhibitor
-  "modules-left": [
-    "niri/workspaces", 
-    "custom/cava"
-  ],
-  "modules-center": ["clock"],
-  "modules-right": [
-    "custom/pacman",
-    "custom/keyboard-layout",
-    "temperature",
-    // "cpu",
-    // "memory",
-    // "disk",
-    "group/hardware",
-    "power-profiles-daemon", 
-    "battery",
-    "tray",
-    "network",
-    "pulseaudio",
-    "custom/power"
-  ],
-
-
-    // Load Modules
-    "include": ["~/.config/waybar/modules.json"],
-
-  // Modules configuration
-
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+    "layer": "top",
+    "position": "top",
+    "height": 10,
+    "margin": "-2 0 -10 0",
+    "modules-left": [
+        "niri/workspaces",
+        "custom/cava",
+        "group/hardware",
+        "custom/pacman"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "group/info",
+        "tray",
+        "network",
+        "pulseaudio",
+        "custom/power"
+    ],
 }
