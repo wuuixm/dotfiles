@@ -1,8 +1,8 @@
 
-@define-color accent #86d1e9;
-@define-color bg-color #0f1416;
-@define-color fg-color #dee3e6;
-@define-color desc-color #bfc8cc;
+@define-color accent #ffb3ad;
+@define-color bg-color #1a1110;
+@define-color fg-color #f1dedc;
+@define-color desc-color #d8c2bf;
 
 window {
     background: transparent;

@@ -20,7 +20,6 @@ window#waybar {
 }
 #workspaces {
     border-radius: 12px;
-    margin: 4px 8px;
     padding: 6px 10px;
 }
 
@@ -61,11 +60,11 @@ window#waybar {
 }
 
 .modules-left > widget:first-child > * {
-    margin-left: 6px;
+    margin-left: 4px;
 }
 
 .modules-right > widget:last-child > * {
-    margin-right: 6px;
+    margin-right: 4px;
 }
 
 #custom-cava {
@@ -76,13 +75,13 @@ window#waybar {
 #clock {
     color: @secondary;
     border-radius: 12px;
-    margin: 4px 8px;
+    padding: 5px 14px 5px 8px;
 }
 
 #battery {
     color: #a6da95;
     border-radius: 0 12px 12px 0;
-    margin: 4px 8px 4px 0;
+    margin: 4px 2px 4px 0;
 }
 
 #battery.charging {
@@ -111,7 +110,7 @@ window#waybar {
 #custom-system {
     color: @secondary;
     border-radius: 12px 0 0 12px;
-    margin: 4px 0 4px 8px;
+    margin: 4px 0 4px 2px;
 }
 
 
@@ -151,56 +150,48 @@ window#waybar {
 #network.disabled {
     color: #bf616a;
     border-radius: 12px;
-    margin: 4px 8px;
 }
 
 #network {
     color: #a6da95;
     border-radius: 12px;
-    margin: 4px 8px;
 }
 
 #network.disconnected {
     color: #bf616a;
     border-radius: 12px;
-    margin: 4px 8px;
 }
 
 #pulseaudio {
     color: #f0c6c6;
     border-radius: 12px;
-    margin: 4px 8px;
 }
 
 #pulseaudio.muted {
     color: #3b4252;
     border-radius: 12px;
-    margin: 4px 8px;
 }
 
 #temperature {
     color: #8bd5ca;
     border-radius: 12px 0 0 12px;
-    margin: 4px 0 4px 8px;
+    margin: 4px 0 4px 2px;
 }
 
 #temperature.critical {
     color: #ed8796;
     border-radius: 12px;
-    margin: 4px 8px;
 }
 
 #tray {
     border-radius: 12px;
-    margin: 4px 8px;
 }
 
 #custom-power {
     color: @background;
     background-color: @on_primary_container;
     border-radius: 12px;
-    margin: 4px 8px;
-    padding: 5px 10px;
+    padding: 5px 10px 5px 8px;
 }
 
 #custom-pacman {
