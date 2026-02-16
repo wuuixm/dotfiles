@@ -5,7 +5,7 @@
     "layer": "top",
     "position": "top",
     "height": 10,
-    "margin": "-2 0 -10 0",
+    "margin": "-1 0 -10 0",
     "modules-left": [
         "niri/workspaces",
         "custom/cava",
@@ -16,7 +16,9 @@
         "clock"
     ],
     "modules-right": [
-        "group/info",
+        "power-profiles-daemon",
+        "temperature",
+        "battery",
         "tray",
         "network",
         "pulseaudio",

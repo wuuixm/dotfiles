@@ -2,4 +2,15 @@
 # VERSION: 3.0
 SETUVAR __fish_initialized:4300
 SETUVAR __fish_webconfig_theme_notification:set\x2dtheme\x2dv1\x2d\x232
+SETUVAR _fish_abbr_ai:copilot
+SETUVAR _fish_abbr_bc:cp\x20dd\x20df\x20du\x20ex\x20hd\x20id\x20ip\x20ln\x20ls\x20mv\x20nl\x20od\x20pr\x20ps\x20rm\x20sg\x20sh\x20ss\x20su\x20tr\x20ul\x20vi\x20wc\x20xz\x20copilot\x20\x2dp
+SETUVAR _fish_abbr_cube:env\x20_JAVA_AWT_WM_NONREPARENTING\x3d1\x20GDK_BACKEND\x3dx11\x20stm32cubemx\x20\x3e/dev/null\x202\x3e\x261\x20\x26
+SETUVAR _fish_abbr_db:copilot\x20\x2dp
+SETUVAR _fish_abbr_fbak:abbr\x20\x3e\x3e\x20\x7e/\x2econfig/fish/conf\x2ed/abbrs\x2efish
+SETUVAR _fish_abbr_js:copilot\x20\x2dp
+SETUVAR _fish_abbr_nrs:niri\x2dsession
+SETUVAR _fish_abbr_pac:sudo\x20pacman\x20\x2dS
+SETUVAR _fish_abbr_vim:nvim
+SETUVAR _fish_abbr_zed:zeditor
 SETUVAR fish_greeting:\x1d
+SETUVAR fish_user_paths:/home/wuuixm/\x2elocal/bin

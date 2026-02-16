@@ -57,12 +57,12 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
     },
-    "format": "{:%Y-%m-%d | %H:%M:%S }",
+    "format": "{:%Y-%m-%d  |  %H:%M:%S 󰊠 }",
     "format-alt": "  {:%a %d %b  %I:%M %p}",
     "interval": 1
   },
   "custom/system": {
-    "format": " os",
+    "format": "󰣇  os",
     "tooltip": false
   },
   "power-profiles-daemon": {
@@ -70,14 +70,14 @@
     "tooltip-format": "Performance mode:{profile}",
     "tooltip": true,
     "format-icons": {
-      "performance": "󱐋",
+      "performance": "",
       "balanced": "",
-      "power-saver": ""
+      "power-saver": ""
     }
   },
   "cpu": {
     "interval": 10,
-    "format": "󰍛 {usage}%",
+    "format": "󰍛  {usage}%",
     "rotate": 0,
     "format-alt": "{icon0}{icon1}{icon2}{icon3}",
     "format-icons": [
@@ -98,15 +98,15 @@
       "m": 30
     },
     "interval": 30,
-    "format": "\udb83\udf86 {used}GB",
+    "format": "\udb83\udf86  {used}GB",
     "rotate": 0,
-    "format-m": "\udb83\udf85 {used}GB",
-    "format-h": "\udb81\udcc5 {used}GB",
-    "format-c": "\uf421 {used}GB",
-    "format-alt": "\udb83\udf86 {percentage}%",
+    "format-m": "\udb83\udf85  {used}GB",
+    "format-h": "\udb81\udcc5  {used}GB",
+    "format-c": "\uf421  {used}GB",
+    "format-alt": "\udb83\udf86  {percentage}%",
     "max-length": 10,
     "tooltip": true,
-    "tooltip-format": "\udb83\udf86 Memory usage: {percentage}%\n\ue266 Used: {used:0.2f}GB / {total:0.2f}GB\n\uf85a Available: {avail:0.2f}GB\n\uf233 Swap used: {swapUsed:0.2f}GB / {swapTotal:0.2f}GB ({swapPercentage}%)"
+    "tooltip-format": "\udb83\udf86  Memory usage: {percentage}%\n\ue266  Used: {used:0.2f}GB / {total:0.2f}GB\n\uf85a  Available: {avail:0.2f}GB\n\uf233  Swap used: {swapUsed:0.2f}GB / {swapTotal:0.2f}GB ({swapPercentage}%)"
   },
   "temperature": {
     "thermal-zone": 0,
@@ -114,7 +114,7 @@
     "format": " {temperatureC}°C"
   },
   "disk": {
-    "format": " {percentage_used}% ",
+    "format": "  {percentage_used}% ",
     "path": "/",
     "on-click": "ghostty -e htop"
   },
@@ -133,21 +133,14 @@
       "backlight"
     ]
   },
-  "group/info": {
-    "orientation": "inherit",
-    "modules": [
-      "temperature",
-      "power-profiles-daemon",
-      "battery"
-    ]
-  },
+  
   "battery": {
     "states": {
       "warning": 30,
       "critical": 15
     },
     "format": "{icon} {capacity: >3}%",
-    "format-charging": "  {capacity}%",
+    "format-charging": "󰂄 {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{icon}  {time}",
     "format-icons": [
@@ -160,17 +153,17 @@
   },
   "network": {
     "format": "⚠ Disabled",
-    "format-wifi": " {essid}",
-    "format-ethernet": "  Wired",
-    "format-disconnected": "⚠ Disconnected",
-    "tooltip-format": " {ifname} via {gwaddr}",
-    "tooltip-format-wifi": "  {essid} ({signalStrength}%)",
-    "tooltip-format-ethernet": "  {ifname} ({ipaddr}/{cidr})",
-    "tooltip-format-disconnected": "⚠ Disconnected",
+    "format-wifi": "   {essid}",
+    "format-ethernet": "   Wired",
+    "format-disconnected": "⚠  Disconnected",
+    "tooltip-format": "  {ifname} via {gwaddr}",
+    "tooltip-format-wifi": "   {essid} ({signalStrength}%)",
+    "tooltip-format-ethernet": "   {ifname} ({ipaddr}/{cidr})",
+    "tooltip-format-disconnected": "⚠  Disconnected",
     "on-click": "nm-connection-editor"
   },
   "pulseaudio": {
-    "format": "{icon}  {volume}",
+    "format": "{icon}   {volume}",
     "rotate": 0,
     "format-muted": "婢",
     "on-click": "pavucontrol",
@@ -193,7 +186,7 @@
     }
   },
   "custom/pacman": {
-    "format": " {}",
+    "format": "   {}",
     "interval": 7200,
     "exec": "updates=$(checkupdates 2>/dev/null); if [ -n \"$updates\" ]; then count=$(echo \"$updates\" | wc -l); echo \"$count\"; echo \"$updates\" | column -t | tr '\n' '\r'; else echo \"0\"; echo \"No updates available\"; fi",
     "exec-if": "exit 0",
@@ -201,7 +194,7 @@
     "signal": 8
   },
   "custom/power": {
-    "format": "⏻",
+    "format": "",
     "on-click": "wlogout -p layer-shell -b 2 -L 140 -R 200 -T 180 -B 200",
     "tooltip": false
   }

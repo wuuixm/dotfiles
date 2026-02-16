@@ -5,7 +5,7 @@ theme = "Matugen"
 background-opacity = 0.7
 
 # 字体
-font-family = "JetBrainsMono Nerd Font"
+font-family = "JetBrainsNLMono Nerd Font"
 
 # 字体大小
 font-size = 12
