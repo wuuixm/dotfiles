@@ -4,7 +4,7 @@
     color: @secondary;
     border: 0;
     font-family: "JetBrainsNLMono Nerd Font";
-    font-size:13px;
+    font-size: 13px;
 }
 
 window#waybar {
@@ -45,7 +45,7 @@ window#waybar {
     min-width: 20px;
 }
 #workspaces button:hover {
-    background: @on_primary_container;
+    background: @primary;
     border-radius: 20px;
     padding-left: 2px;
     padding-right: 2px;
@@ -53,8 +53,7 @@ window#waybar {
 }
 
 #workspaces button.active {
-    color: #2f2f2f;
-    background: @on_primary_container;
+    background: @primary;
     padding-left: 8px;
     padding-right: 8px;
     transition: all 0.3s cubic-bezier(0.55, -0.68, 0.48, 1.682);
@@ -70,7 +69,7 @@ window#waybar {
 
 #custom-cava {
     border-radius: 12px;
-    color: @on_primary_container;
+    color: @primary;
 }
 
 #clock {
@@ -80,7 +79,7 @@ window#waybar {
 }
 
 #battery {
-    color: #a6da95;
+    color: @secondary;
     border-radius: 0 12px 12px 0;
     margin: 2px 2px 2px 0;
 }
@@ -109,35 +108,35 @@ window#waybar {
 }
 
 #custom-system {
-    color: @secondary;
+    color: @primary;
     border-radius: 12px 0 0 12px;
     margin: 2px 0 2px 2px;
 }
 
-
 #cpu {
-    color: @secondary;
+    color: @primary;
     border-radius: 0;
     margin: 2px 0;
 }
 
 #cpu #cpu-icon {
-    color: @secondary;
+    color: @primary;
 }
 
 #memory {
-    color: @secondary;
+    color: @primary;
     border-radius: 0;
     margin: 2px 0;
 }
 
 #disk {
-    color: @secondary;
+    color: @primary;
     border-radius: 0;
     margin: 2px 0;
 }
 
 #backlight {
+    color: @primary;
     border-radius: 0px;
     margin: 2px 0px 2px 0;
 }
@@ -149,54 +148,54 @@ window#waybar {
 }
 
 #network.disabled {
-    color: #bf616a;
+    color: @error;
     border-radius: 12px;
 }
 
 #network {
-    color: #a6da95;
+    color: @secondary;
     border-radius: 12px;
 }
 
 #network.disconnected {
-    color: #bf616a;
+    color: @error;
     border-radius: 12px;
 }
 
 #pulseaudio {
-    color: #f0c6c6;
+    color: @secondary;
     border-radius: 12px;
 }
 
 #pulseaudio.muted {
-    color: #3b4252;
+    color: @secondary;
     border-radius: 12px;
 }
 
 #temperature {
-    color: #8bd5ca;
+    color: @secondary;
     border-radius: 0px 0px 0px 0px;
     margin: 2px 0px;
 }
 
 #temperature.critical {
-    color: #ed8796;
+    color: @error;
     border-radius: 12px;
 }
-
 #tray {
+    color: @secondary;
     border-radius: 12px;
 }
 
 #custom-power {
     color: @background;
-    background-color: @on_primary_container;
+    background: @secondary;
     border-radius: 12px;
     padding: 2px 14px 2px 11px;
 }
 
 #custom-pacman {
+    color: @primary;
     border-radius: 0 12px 12px 0;
     margin: 2px 2px 2px 0;
 }
-
