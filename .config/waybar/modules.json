@@ -57,8 +57,8 @@
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
     },
-    "format": "{:%Y-%m-%d  |  %H:%M:%S 󰊠 }",
-    "format-alt": "  {:%a %d %b  %I:%M %p}",
+    "format": "{:%Y-%m-%d  |  %H:%M:%S 🌸}",
+    "format-alt": "  {:%a %d %b   %I:%M %p 🍀}",
     "interval": 1
   },
   "custom/system": {
