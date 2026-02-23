@@ -1,0 +1,9 @@
+[Unit]
+Description=Aria2 Download Manager
+
+[Service]
+ExecStart=/usr/bin/aria2c --conf-path=/home/wuuixm/.config/aria2/aria2.conf
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
