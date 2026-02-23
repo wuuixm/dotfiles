@@ -3,7 +3,7 @@
 * {
     color: @secondary;
     border: 0;
-    font-family: "JetBrainsNLMono Nerd Font";
+    font-family: "Maple Mono NF CN";
     font-size: 13px;
 }
 
@@ -75,7 +75,7 @@ window#waybar {
 #clock {
     color: @secondary;
     border-radius: 12px;
-    padding: 2px 6px 2px 10px;
+    padding: 2px 6px 2px 16px;
 }
 
 #battery {

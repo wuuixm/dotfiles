@@ -1,10 +1,15 @@
 .config/alacritty/colors.toml
 .config/waybar/colors.css
-.config/ghostty/themes/Matugen
+.config/ghostty/themes/*
 .config/starship.toml
 .config/wlogout/colors.css
 .config/niri/colors.kdl
-.config/btop/themes/matugen.theme
+.config/niri/noctalia.kdl
+.config/btop/themes/*
 .config/hypr/colors.conf
 .config/anyrun/style.css
 .config/yazi/theme.toml
+.config/yazi/flavors/noctalia.yazi/*
+.config/cava/themes/*
+.config/kitty/themes/*
+.config/wezterm/colors/*

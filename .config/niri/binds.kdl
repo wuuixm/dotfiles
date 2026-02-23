@@ -14,18 +14,21 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // user keymap
-
+    // 打开noctalia设置
+    Mod+S { spawn-sh "qs -c noctalia-shell ipc call controlCenter toggle"; }
+    Mod+E { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "emoji"; }
     // 打开文件管理器
-    Mod+E {spawn "nautilus";}
+    //Mod+E {spawn "nautilus";}
 
     // 打开壁纸选择
-    Mod+Shift+W {spawn "waypaper";}
+    //Mod+Shift+W {spawn "waypaper";}
+    Mod+Shift+W { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "wallpaper" "toggle"; }
 
     // 关闭输入法
     Mod+F3 {spawn-sh "pkill fcitx5 || fcitx5";}
 
     // 关闭waybar
-    Mod+F4 {spawn-sh "killall -SIGUSR1 waybar";}
+    //Mod+F4 {spawn-sh "killall -SIGUSR1 waybar";}
 
     // mod+鼠标中键关闭窗口
     Mod+MouseMiddle { close-window;}
@@ -34,13 +37,13 @@ binds {
     Mod+Shift+V       { toggle-window-floating; }
 
     // 打开剪贴板
-     Mod+V { spawn "sh" "-c" "cliphist list | anyrun --plugins /usr/lib/anyrun/libstdin.so | cliphist decode | wl-copy"; }
-
+    //Mod+V { spawn "sh" "-c" "cliphist list | anyrun --plugins /usr/lib/anyrun/libstdin.so | cliphist decode | wl-copy"; }
+    Mod+V { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "clipboard"; }
     // 打开启动器
-    Mod+D hotkey-overlay-title="Run an Application: anyrun" { spawn "anyrun"; }
-
+    //Mod+D hotkey-overlay-title="Run an Application: anyrun" { spawn "anyrun"; }
+    Mod+D { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
     // 锁屏
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
+    //Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
 
     // 截屏
     Mod+Return { spawn-sh "grim -g \"$(slurp)\" - | satty --filename -"; }
@@ -70,7 +73,7 @@ binds {
     Mod+Ctrl+Page_Up   { move-workspace-up; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+T hotkey-overlay-title="Open a Terminal" { spawn "ghostty"; }
     //Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
     //Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 

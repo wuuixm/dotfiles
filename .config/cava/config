@@ -219,6 +219,7 @@
 ; waveform = 0
 
 [color]
+theme = "noctalia"
 
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
 # Or defined by hex code '#xxxxxx' (hex code must be within ''). User defined colors requires
@@ -250,7 +251,7 @@
 gradient = 1
 gradient_count = 2
 gradient_color_1 = '#343a3c'
-gradient_color_2 = '#86d1e9'
+gradient_color_2 = '#82d3e2'
 
 [smoothing]
 

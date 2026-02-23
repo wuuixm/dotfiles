@@ -10,7 +10,8 @@ environment {
 
 include "animations.kdl"
 include "binds.kdl"
-include "colors.kdl"
+//include "colors.kdl"
+include "noctalia.kdl"
 include "output.kdl"
 include "starup.kdl"
 include "theme.kdl"
@@ -286,7 +287,6 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -362,4 +362,7 @@ window-rule {
 
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
+
+
+include "./noctalia.kdl"
 
