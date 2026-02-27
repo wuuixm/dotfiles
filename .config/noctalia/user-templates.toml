@@ -14,4 +14,6 @@
 #[templates.placeholder]
 #input_path = "/etc/xdg/quickshell/noctalia-shell/Assets/Templates/noctalia.json"
 #output_path = "/home/wuuixm/.cache/noctalia/placeholder.json"
-
+[templates.niri]
+input_path = "~/.config/noctalia/templates/niri-noctalia"  
+output_path = "~/.config/niri/noctalia.kdl"        

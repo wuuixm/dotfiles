@@ -7,7 +7,7 @@ background-opacity = 0.7
 # 字体
 # font-family = "JetBrainsNLMono Nerd Font"
 font-family = "Maple Mono NF CN"
-font-style = "Italic"
+# font-style = "Italic"
 
 # 字体大小
 font-size = 12

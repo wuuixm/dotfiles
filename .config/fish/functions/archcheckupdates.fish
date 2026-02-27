@@ -5,8 +5,10 @@ function archcheckupdates
     if test (count $repo_updates) -eq 0
         echo "  ✔ 无更新"
     else
-        echo $repo_updates
-        echo "  共 "(count $repo_updates)" 个"
+        for pkg in $repo_updates
+            echo $pkg
+        end
+        echo "共 "(count $repo_updates)" 个"
     end
 
     echo
@@ -16,7 +18,9 @@ function archcheckupdates
     if test (count $aur_updates) -eq 0
         echo "  ✔ 无更新"
     else
-        echo $aur_updates
-        echo "  共 "(count $aur_updates)" 个"
+        for pkg in $aur_updates
+            echo $pkg
+        end
+        echo "共 "(count $aur_updates)" 个"
     end
 end

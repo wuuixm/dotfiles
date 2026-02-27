@@ -6,7 +6,7 @@
         "clipboardWrapText": true,
         "customLaunchPrefix": "",
         "customLaunchPrefixEnabled": false,
-        "density": "default",
+        "density": "comfortable",
         "enableClipPreview": true,
         "enableClipboardHistory": true,
         "enableSessionSearch": true,
@@ -19,7 +19,7 @@
         ],
         "position": "center",
         "screenshotAnnotationTool": "",
-        "showCategories": true,
+        "showCategories": false,
         "showIconBackground": false,
         "sortByMostUsed": true,
         "terminalCommand": "ghostty -e",
@@ -68,7 +68,7 @@
                     "formatHorizontal": "MM/dd/yyyy HH:mm",
                     "formatVertical": "HH mm - dd MM",
                     "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd, MMM dd",
+                    "tooltipFormat": "HH:mm:ss ddd MMM d",
                     "useCustomFont": false
                 }
             ],
@@ -97,27 +97,6 @@
                     "hideWhenIdle": false,
                     "id": "AudioVisualizer",
                     "width": 150
-                },
-                {
-                    "compactMode": false,
-                    "diskPath": "/",
-                    "iconColor": "primary",
-                    "id": "SystemMonitor",
-                    "showCpuFreq": false,
-                    "showCpuTemp": true,
-                    "showCpuUsage": true,
-                    "showDiskAvailable": false,
-                    "showDiskUsage": false,
-                    "showDiskUsageAsPercent": false,
-                    "showGpuTemp": false,
-                    "showLoadAverage": false,
-                    "showMemoryAsPercent": true,
-                    "showMemoryUsage": true,
-                    "showNetworkStats": false,
-                    "showSwapUsage": false,
-                    "textColor": "none",
-                    "useMonospaceFont": true,
-                    "usePadding": false
                 },
                 {
                     "defaultSettings": {
@@ -265,22 +244,22 @@
         "shortcuts": {
             "left": [
                 {
+                    "id": "AirplaneMode"
+                },
+                {
                     "id": "Network"
                 },
                 {
                     "id": "Bluetooth"
                 },
                 {
-                    "id": "WallpaperSelector"
+                    "id": "DarkMode"
                 },
                 {
-                    "id": "NoctaliaPerformance"
+                    "id": "WallpaperSelector"
                 }
             ],
             "right": [
-                {
-                    "id": "Notifications"
-                },
                 {
                     "id": "PowerProfile"
                 },
@@ -288,10 +267,19 @@
                     "id": "KeepAwake"
                 },
                 {
-                    "id": "NightLight"
+                    "id": "Notifications"
                 },
                 {
-                    "id": "Notifications"
+                    "id": "NoctaliaPerformance"
+                },
+                {
+                    "defaultSettings": {
+                        "compactMode": false,
+                        "defaultDuration": 0,
+                        "iconColor": "none",
+                        "textColor": "none"
+                    },
+                    "id": "plugin:timer"
                 }
             ]
         }
@@ -365,7 +353,7 @@
         "language": "",
         "lockOnSuspend": true,
         "lockScreenAnimations": true,
-        "lockScreenBlur": 1,
+        "lockScreenBlur": 0.8,
         "lockScreenCountdownDuration": 10000,
         "lockScreenMonitors": [
         ],
@@ -402,7 +390,7 @@
         "name": "Chuzhou",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
-        "showWeekNumberInCalendar": false,
+        "showWeekNumberInCalendar": true,
         "use12hourFormat": false,
         "useFahrenheit": false,
         "weatherEnabled": true,
@@ -564,15 +552,7 @@
         "activeTemplates": [
             {
                 "enabled": true,
-                "id": "niri"
-            },
-            {
-                "enabled": true,
                 "id": "cava"
-            },
-            {
-                "enabled": true,
-                "id": "yazi"
             },
             {
                 "enabled": true,
@@ -580,10 +560,10 @@
             },
             {
                 "enabled": true,
-                "id": "kitty"
+                "id": "ghostty"
             }
         ],
-        "enableUserTheming": false
+        "enableUserTheming": true
     },
     "ui": {
         "bluetoothDetailsViewMode": "grid",
@@ -616,7 +596,7 @@
         "overviewEnabled": true,
         "overviewTint": 0.6,
         "panelPosition": "top_center",
-        "randomIntervalSec": 300,
+        "randomIntervalSec": 1800,
         "setWallpaperOnAllMonitors": true,
         "showHiddenFiles": false,
         "skipStartupTransition": false,
