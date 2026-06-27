@@ -17,3 +17,7 @@
 [templates.niri]
 input_path = "~/.config/noctalia/templates/niri-noctalia"  
 output_path = "~/.config/niri/noctalia.kdl"        
+
+# [templates.cava]
+# input_path = "~/.config/noctalia/templates/cava-noctalia.ini"  
+# output_path = "~/.config/cava/themes/noctalia"        

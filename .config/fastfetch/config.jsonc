@@ -2,15 +2,16 @@
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
 
   "display": {
-    "separator": "  ",
+    "separator": "    ",
     "key": {
-      "width": 13
+      "width": 18
     }
   },
 
   "logo": {
-    "type": "builtin",
-    "source": "Arch"
+    //"type": "builtin",
+    "type": "file",
+    "source": "~/.config/fastfetch/miku.txt"
   },
 
   "modules": [

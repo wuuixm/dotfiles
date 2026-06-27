@@ -46,7 +46,9 @@ binds {
     //Super+Alt+L hotkey-overlay-title="Lock the Screen: hyprlock" { spawn "hyprlock"; }
 
     // 截屏
-    Mod+Return { spawn-sh "grim -g \"$(slurp)\" - | satty --filename -"; }
+    //Mod+Return { spawn-sh "grim -g \"$(slurp)\" - | satty --filename -"; }
+    Mod+Return { spawn-sh "qs -c noctalia-shell ipc call plugin:screen-toolkit annotate"; }
+    Mod+Z { spawn-sh "qs -c noctalia-shell ipc call plugin:screen-toolkit toggle"; }
 
     // 焦点移动，左右正常移动，上下在无焦点时移动工作区
     Mod+Left  { focus-column-left; }

@@ -1,8 +1,0 @@
-{
-  "updateIntervalMinutes": 120,
-  "updateTerminalCommand": "ghostty -e",
-  "currentIconName": "pacman",
-  "hideOnZero": true,
-  "customCmdGetNumUpdates": "",
-  "customCmdDoSystemUpdate": ""
-}

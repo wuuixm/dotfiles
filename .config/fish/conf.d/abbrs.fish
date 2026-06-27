@@ -2,7 +2,6 @@ abbr -a -- vim nvim
 abbr -a -- js 'copilot -p'
 abbr -a -- bc 'cp dd df du ex hd id ip ln ls mv nl od pr ps rm sg sh ss su tr ul vi wc xz copilot -p'
 abbr -a -- db 'copilot -p'
-abbr -a -- ai copilot
 abbr -a -- ?? 'copilot -p'
 abbr -a -- pac 'sudo pacman -S'
 abbr -a -- par 'paru -S'
@@ -15,3 +14,9 @@ abbr -a -- ni nvim
 abbr -a -- upd 'paru -Syu'
 abbr -a -- bp btop
 abbr -a --set-cursor='%' -- nih 'nvim ~/%'
+abbr -a -- music termusic
+abbr -a -- hmcl 'cd ~ && prime-run hmcl-bin &>/dev/null & disown'
+abbr -a -- mo '/usr/share/Cat/Cat >/dev/null 2>&1 & disown'
+abbr -a -- ccd claude
+abbr -a -- mat mdcat
+abbr -a -- ai copilot
