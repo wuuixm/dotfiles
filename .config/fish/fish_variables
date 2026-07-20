@@ -20,4 +20,4 @@ SETUVAR _fish_abbr_upd:paru\x20\x2dSyu
 SETUVAR _fish_abbr_vim:nvim
 SETUVAR _fish_abbr_zed:zeditor
 SETUVAR fish_greeting:\x1d
-SETUVAR fish_user_paths:/home/wuuixm/\x2elocal/bin
+SETUVAR fish_user_paths:/opt/loongarch64/bin\x1e/home/wuuixm/\x2elocal/bin
